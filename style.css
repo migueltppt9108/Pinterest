@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #fff; /* Color del texto */
+    padding: 10px; /* Espaciado interior */
+    z-index: 1000; /* Para asegurarse de que esté encima de otros elementos */
+    margin-bottom: 10px;
+
+}
+
+.container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+     /* background-color: aquamarine;  */
+
+}
+
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background:transparent;
+    outline: none;
+    font-size: 10px;
+    color: #fff;
+ }
+
+ ::placeholder{
+    color: aliceblue;
+    font-size: 15px;
+ }
+
+ .buscar img{
+    width: 20px;
+ }
+
+
+
+.iconscont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+}
+
+
+.iconscont img{
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.noticont{
+    opacity: 0; 
+    background-color: rgba(46, 45, 45, 0.212);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 20px;
+    object-fit: cover;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+
+.buscar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(22, 9, 9, 0.466);
+    border-radius: 25px;
+    padding: 4px;
+    width: 100%;
+    margin: 15px;
+
+}
+
+.link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 100%;
+    font-weight: 600;
+
+}
+
+.link a{
+    
+    margin: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+
+    
+}
+
+.logo{
+    margin: 15px;
+}
+
+.notif:hover .noticont{
+    opacity: 1;
+}
+
+.messg:hover .noticont{
+    opacity: 1;
+}
+
+.prof:hover .noticont{
+    opacity: 1;
+}
+
+.down:hover .noticont{
+    opacity: 1;
+}
+
+
+
+
+/* ........................................................................................ */
+
+
+ #sections{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    margin-top: 100px;
+    padding: 5px;
+
+ }
+
+ .card img{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+   
+}
+
+
+.card-content{
+    opacity: 0;
+    transition: 100ms;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.295);
+    object-fit: cover;
+
+}
+ 
+.card:hover .card-content{
+    opacity: 1;
+}
+
+
+
+h1{
+    position: absolute;
+    display: flex;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    top: 40px;
+    font-weight: 100;
+    cursor: context-menu;
+
+}
+
+#sections a{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 20px;
+    top: 310px;
+    margin: 15px;
+    color: rgb(20, 7, 7);
+    text-decoration: none;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    padding: 5px;
+    
+
+}
+
+.uno{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    right: 30px;
+    background-color: rgb(206, 21, 21);
+    border-radius: 25px;
+    padding: 4px;
+    border-width: 0;
+    width: 40%;
+    height: 12%;
+
+
+}
+
+.uno:hover{
+    background-color: rgba(148, 72, 72, 0.829);
+    cursor: pointer;
+}
+
+.dos{
+    position: absolute;
+    display: flex;
+    top: 325px;
+    right: 80px;
+    border-width: 1;
+    width: 12%;
+    border-radius: 25px;
+    padding: 5px;
+
+}
+
+.menu{
+    position: absolute;
+    display: flex;
+    width: 30%;
+    height: 20%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+
+@media only screen and (min-width: 480px){
+    .link{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 100%;
+        font-weight: 600;
+    
+    }
+
+    .link a{
+        margin: 5px;
+        color: #000000;
+        text-decoration: none;
+    }
+}
+
+.tres{
+    position: absolute;
+    display: flex;
+    top: 325px;
+    right: 30px;
+    width: 12%;
+    border-radius: 25px;
+    padding: 5px;
+    
+    
+    
+}
